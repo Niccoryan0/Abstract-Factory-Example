@@ -12,6 +12,8 @@ namespace AbstractFactoryExample
             Console.WriteLine("Thanks for coming in, how old are you?");
             int input = int.Parse(Console.ReadLine());
             RestaruantFactory factory;
+
+
             if(input <= 21)
             {
                 factory = new ChildItemsFactory();
@@ -21,12 +23,12 @@ namespace AbstractFactoryExample
                 factory = new AdultItemsFactory();
             }
 
+
             var sandwich = factory.MakeSandwich();
             var drink = factory.MakeDrink();
 
             Console.WriteLine($"Here's your meal, a {sandwich.GetType().Name} and some {drink.GetType().Name}");
 
-            Console.ReadKey();
         }
     }
 }
