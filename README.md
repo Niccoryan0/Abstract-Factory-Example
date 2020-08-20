@@ -6,6 +6,7 @@ Example was adapted from: https://www.exceptionnotfound.net/abstract-factory-pat
 
 Author: *Nicco Ryan*
 
+## Example image
 ![Example drawing](assets/AbstractFactoryDrawing.png)
 
 ## Factory Method Vs. Abstract Factory
