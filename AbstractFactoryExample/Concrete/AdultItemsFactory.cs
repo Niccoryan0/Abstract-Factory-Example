@@ -12,7 +12,7 @@ namespace AbstractFactoryExample.Concrete
             return new Burger();
         }
 
-        Drink RestaruantFactory.MakeDrink()
+        public Drink MakeDrink()
         {
             return new Beer();
         }
